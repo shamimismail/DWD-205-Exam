@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Names</title>
+  </head>
+  <body>
+    <h1>Employee Names</h1>
+    <% if (employeeNames.length === 0) { %>
+      <p>No employees found.</p>
+    <% } else { %>
+      <ul>
+        <% employeeNames.forEach(name => { %>
+          <li><%= name %></li>
+        <% }); %>
+      </ul>
+    <% } %>
+  </body>
+</html>
